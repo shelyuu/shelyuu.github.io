@@ -56,7 +56,7 @@ if($_POST) {
     // Proceed with PHP email
     $headers = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type:text/html;charset=UTF-8' . "\r\n";
-    $headers .= 'From: My website' . "\r\n";
+    $headers .= 'From: shelyuu.com' . "\r\n";
     $headers .= 'Reply-To: '.$_POST["userEmail"]."\r\n";
     
     'X-Mailer: PHP/' . phpversion();
@@ -73,7 +73,7 @@ if($_POST) {
     if(!$Mailsending) {
         
         //If mail couldn't be sent output error. Check your PHP email configuration (if it ever happens)
-        $output = json_encode(array('type'=>'error', 'text' => '<i class="icon ion-close-round"></i> Oops! Looks like something went wrong, please check your PHP mail configuration.'));
+        $output = json_encode(array('type'=>'error', 'text' => '<i class="icon ion-close-round"></i> Oops! Looks like something went wrong, please check your mail configuration.'));
         die($output);
         
     } else {

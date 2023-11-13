@@ -27,9 +27,9 @@ $(document).ready(function(){
 
     $('.slideshow-about').vegas({
         slides: [
-            { src: 'img/slide-1.jpg' },
-            { src: 'img/slide-2.jpg' },
-            { src: 'img/slide-3.jpg' },
+            { src: 'img/slide-1.png' },
+            { src: 'img/slide-2.png' },
+            { src: 'img/slide-3.png' },
         ],
 
         // Delay beetween slides in milliseconds.
@@ -41,7 +41,7 @@ $(document).ready(function(){
 
     $('.slideshow-services').vegas({
         slides: [
-            { src: 'img/slide-1.jpg' },
+            { src: 'img/slide-1.png' },
             // { src: 'img/slide-2.jpg' },
             // { src: 'img/slide-3.jpg' },
         ],

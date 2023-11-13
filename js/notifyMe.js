@@ -51,10 +51,10 @@ function myTimeout() {
                         $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
                         $(".block-message").addClass("show-block-error").removeClass("show-block-valid");
                         if (e.status === 404) {
-                            $(".message").html(thavailability).fadeIn();
+                            $(".message").html('<p class="notify-valid">' + e.status + ' Error: </p>' + thavailability).fadeIn();
                             myTimeout();
                         } else {
-                            $(".message").html(thoops).fadeIn();
+                            $(".message").html('<p class="notify-valid">' + e.status + ' Error: </p>' + thoops).fadeIn();
                             myTimeout();
                         }
                     }
@@ -75,7 +75,7 @@ function myTimeout() {
                         } else {
                             $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
                             $(".block-message").addClass("show-block-error").removeClass("show-block-valid");
-                            $(".message").html(thoops).fadeIn();
+                            $(".message").html('<p class="notify-valid">' + e.status + ' Error: </p>' + thoops).fadeIn();
                             myTimeout();
                         }
                     }

@@ -1,2 +1,2 @@
-# shelyuu.github.io
-shelyuu's blog
+# shelyuu.com
+Everything about shelyuu
