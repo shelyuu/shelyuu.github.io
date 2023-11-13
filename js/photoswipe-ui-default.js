@@ -1,5 +1,5 @@
 /*! PhotoSwipe Default UI - 4.1.0 - 2015-09-04
-* http://photoswipe.com
+* https://photoswipe.com
 * Copyright (c) 2015 Dmitry Semenov; */
 /**
 *
@@ -79,7 +79,7 @@ var PhotoSwipeUI_Default =
 			shareButtons: [
 				{id:'facebook', label:'Share on Facebook', url:'https://www.facebook.com/sharer/sharer.php?u={{url}}'},
 				{id:'twitter', label:'Tweet', url:'https://twitter.com/intent/tweet?text={{text}}&url={{url}}'},
-				{id:'pinterest', label:'Pin it', url:'http://www.pinterest.com/pin/create/button/'+
+				{id:'pinterest', label:'Pin it', url:'https://www.pinterest.com/pin/create/button/'+
 													'?url={{url}}&media={{image_url}}&description={{text}}'},
 				{id:'download', label:'Download image', url:'{{raw_image_url}}', download:true}
 			],

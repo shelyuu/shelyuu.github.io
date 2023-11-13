@@ -4,7 +4,7 @@
 * Last Update: March 2017
 * Author: Madeon08 for ThemeHelite
 * Copyright (C) 2016 ThemeHelite
-* This is a premium product available exclusively here : http://themeforest.net/user/Madeon08/portfolio
+* This is a premium product available exclusively here : https://themeforest.net/user/Madeon08/portfolio
 */
 
 /*  TABLE OF CONTENTS

@@ -1,5 +1,5 @@
 /*! PhotoSwipe - v4.1.0 - 2015-08-14
-* http://photoswipe.com
+* https://photoswipe.com
 * Copyright (c) 2015 Dmitry Semenov; */
 (function (root, factory) { 
 	if (typeof define === 'function' && define.amd) {
@@ -167,7 +167,7 @@ var framework = {
 			var ua = navigator.userAgent;
 
 			// Detect if device is iPhone or iPod and if it's older than iOS 8
-			// http://stackoverflow.com/a/14223920
+			// https://stackoverflow.com/a/14223920
 			// 
 			// This detection is made because of buggy top/bottom toolbars
 			// that don't trigger window.resize event.
@@ -185,7 +185,7 @@ var framework = {
 
 			// Detect old Android (before KitKat)
 			// due to bugs related to position:fixed
-			// http://stackoverflow.com/questions/7184573/pick-up-the-android-version-in-the-browser-by-javascript
+			// https://stackoverflow.com/questions/7184573/pick-up-the-android-version-in-the-browser-by-javascript
 			
 			var match = ua.match(/Android\s([0-9\.]*)/);
 			var androidversion =  match ? match[1] : 0;
@@ -246,7 +246,7 @@ var framework = {
 
 		// Detect SVG support
 		features.svg = !!document.createElementNS && 
-						!!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect;
+						!!document.createElementNS('https://www.w3.org/2000/svg', 'svg').createSVGRect;
 
 		framework.features = features;
 
@@ -1630,7 +1630,7 @@ var _gestureStartTime,
 		// Allow dragging only via left mouse button.
 		// As this handler is not added in IE8 - we ignore e.which
 		// 
-		// http://www.quirksmode.org/js/events_properties.html
+		// https://www.quirksmode.org/js/events_properties.html
 		// https://developer.mozilla.org/en-US/docs/Web/API/event.button
 		if(e.type === 'mousedown' && e.button > 0  ) {
 			return;
@@ -3885,7 +3885,7 @@ $(document).ready(function(){
         if(fromURL) {
             if(options.galleryPIDs) {
                 // parse real index when custom PIDs are used 
-                // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                // https://photoswipe.com/documentation/faq.html#custom-pid-in-url
                 for(var j = 0; j < items.length; j++) {
                     if(items[j].pid === index) {
                         options.index = j;
