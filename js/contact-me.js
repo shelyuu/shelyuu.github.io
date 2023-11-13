@@ -25,6 +25,8 @@ $(document).ready(function() {
         post_data = {'fromWebsite':current_domain,'sendtoEmail':send_toEmail,'templateId':template_id,'templateType':template_type,
         'userChecking':user_checking, 'userName':user_name, 'userEmail':user_email, 'userCompany':user_company, 'userPhone':user_phone, 'userMessage':user_message};
        
+        $("#answer").hide().html('Your message has been submitted.').fadeIn();
+
         // Ajax post data to server
         $.post('https://api.shelyuu.com/api/sendmessage', post_data, function(response){  
            
