@@ -58,7 +58,10 @@ html {
   }
   
   /* Styling for the date container, header name, and header subtitle */
-  .bpw-date-container,
+  .bpw-date-container {
+    color: #555;
+ }
+ 
   .bpw-header-name,
   .bpw-header-subtitle {
     color: #ffffff;
