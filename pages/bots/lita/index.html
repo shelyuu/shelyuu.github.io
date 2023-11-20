@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lita - the Pahang Tenun Chatbot</title>
+ 
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        color: white;
+        background-color: #e7e7e7;
+      }
+
+    .center-div {
+      width: 50vw;
+      height: 80vh;
+      background-color: rgb(105 96 149);
+      border-radius: 15px;
+      padding: 5px;
+      box-sizing: border-box;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .center-div {
+        height: 60vh;
+        width: 80vw;
+          border-radius: 15px;
+          padding: 5px;
+          box-sizing: border-box;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+ 
+<body>
+    <div>
+      <div class="absolute inset-4">
+      <div class="center-div rounded-md border-zinc-200 bg-white p-2 relative h-full w-full overflow-clip border px-0 py-0" width="100%" height="100%">
+          <iframe title="bot-config" width="100%" height="100%" min-height="90%" style="border: none;" srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
+            <script>
+                window.botpressWebChat.init({
+                  // Replace <your-bot-id> and <your-client-id> with your actual bot and client IDs
+                    'botName' : 'Lita',
+                    'avatarUrl' : 'https://shelyuu.com/img/shelyuu-profile_image-302812861d949105-300x300.png',
+                    'botId': '164ec601-f2dd-440b-bb8c-3e652fa48952',
+                    'clientId': '164ec601-f2dd-440b-bb8c-3e652fa48952',
+                    'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
+                    'messagingUrl': 'https://messaging.botpress.cloud',
+                    'enableConversationDeletion': false,
+                    'showPoweredBy': false,
+                    'className': 'webchatIframe',
+                    'containerWidth': '100%25',
+                    'layoutWidth': '100%25',
+                    'hideWidget': true,
+                    'showCloseButton': false,
+                    'disableAnimations': false,
+                    'closeOnEscape': false,
+                    'showConversationsButton': false,
+                    'enableTranscriptDownload': false,
+                    'stylesheet':'https://webchat-styler-css.botpress.app/prod/code/04a502b0-f469-4e21-871c-b50786d93d41/v53422/style.css'
+                });
+             
+                // Opens up the Chatbot by default
+                // This lets users start chatting with the Chatbot without needing to click any buttons or menus.
+                window.botpressWebChat.onEvent(
+                    function () {
+                        window.botpressWebChat.sendEvent({ type: 'show' });
+                    },
+                    ['LIFECYCLE.LOADED']
+                );
+            </script></body>"></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
