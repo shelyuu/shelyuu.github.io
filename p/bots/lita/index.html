@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lita - the Pahang Tenun Chatbot</title>
+    <title>Lita - the Tenun Pahang Chatbot</title>
  
     <style>
       body {
@@ -13,7 +13,19 @@
         height: 100vh;
         margin: 0;
         color: white;
-        background-color: #e7e7e7;
+        background-color: #13233c;
+      }
+
+      .static-logo {
+          height: 80px;
+      }
+
+      .center-div-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
       }
 
     .center-div {
@@ -21,7 +33,7 @@
       height: 80vh;
       background-color: rgb(105 96 149);
       border-radius: 15px;
-      padding: 5px;
+      padding: 8px;
       box-sizing: border-box;
       color: white;
       display: flex;
@@ -49,20 +61,26 @@
  
 <body>
     <div>
+      <div class="center-div-img"><img src="/img/bots/lita-bot-logo.png" alt="" class="static-logo" /></div>
       <div class="absolute inset-4">
       <div class="center-div rounded-md border-zinc-200 bg-white p-2 relative h-full w-full overflow-clip border px-0 py-0" width="100%" height="100%">
-          <iframe title="bot-config" width="100%" height="100%" min-height="90%" style="border: none;" srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
+          <iframe title="bot-config" width="100%" height="100%" min-height="90%" style="border: none;" srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v1/inject.js'></script>
             <script>
                 window.botpressWebChat.init({
                   // Replace <your-bot-id> and <your-client-id> with your actual bot and client IDs
                     'botName' : 'Lita',
-                    'avatarUrl' : 'https://shelyuu.com/img/shelyuu-profile_image-302812861d949105-300x300.png',
-                    'botId': '164ec601-f2dd-440b-bb8c-3e652fa48952',
-                    'clientId': '164ec601-f2dd-440b-bb8c-3e652fa48952',
-                    'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
+                    'avatarUrl' : 'https://shelyuu.com/img/bots/lita-bot-ori.png',
+                    'emailAddress': 'support@shelyuu.com',
+                    'website': 'shelyuu.com/pages/bots/lita/about/',
+                    'botId': '34c5de7c-6a1a-4aee-8a5a-3f9fc6eebd91',
+                    'clientId': '34c5de7c-6a1a-4aee-8a5a-3f9fc6eebd91',
+                    'hostUrl': 'https://cdn.botpress.cloud/webchat/v1',
                     'messagingUrl': 'https://messaging.botpress.cloud',
-                    'enableConversationDeletion': false,
                     'showPoweredBy': false,
+                    'frontendVersion': 'v1',
+                    'useSessionStorage': true,
+                    'showBotInfoPage': true,
+                    'enableConversationDeletion': true,
                     'className': 'webchatIframe',
                     'containerWidth': '100%25',
                     'layoutWidth': '100%25',
@@ -72,7 +90,7 @@
                     'closeOnEscape': false,
                     'showConversationsButton': false,
                     'enableTranscriptDownload': false,
-                    'stylesheet':'https://webchat-styler-css.botpress.app/prod/code/04a502b0-f469-4e21-871c-b50786d93d41/v24699/style.css'
+                    'stylesheet':'https://webchat-styler-css.botpress.app/prod/code/ff333cad-5398-4068-9a63-c857069b30d2/v78420/style.css'
                 });
              
                 // Opens up the Chatbot by default

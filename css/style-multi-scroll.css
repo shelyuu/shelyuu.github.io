@@ -26,7 +26,8 @@
 /* *. @Import & Reset .................. */
 /* ------------------------------------- */ 
 /* custom CSS files */
-@import url(font-awesome.min.css);
+/* @import url(font-awesome.min.css); */
+@import url(font-awesome-all.css);
 @import url(ionicons.min.css);
 @import url(bootstrap.min.css);
 @import url(animate.css);

@@ -26,7 +26,8 @@
 /* *. @Import & Reset .................. */
 /* ------------------------------------- */ 
 /* custom CSS files */
-@import url(font-awesome.min.css);
+/* @import url(font-awesome.min.css); */
+@import url(font-awesome-all.css);
 @import url(ionicons.min.css);
 @import url(bootstrap.min.css);
 @import url(animate.css);
@@ -995,6 +996,7 @@ sup {
   background: #FFFFFF;
 }
 #carousel-services .carousel-inner {
+  min-height: 280px;
   overflow: hidden;
 }
 #carousel-services .carousel-inner .item {
@@ -1767,6 +1769,11 @@ sup {
     left: 2.5rem;
   }
 
+  #carousel-services .carousel-inner {
+    min-height: 280px;
+    overflow: hidden;
+  }
+  
   .carousel-inner {
     margin-bottom: 5rem;
   }
@@ -1854,6 +1861,11 @@ sup {
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 5.5rem;
+  }
+
+  #carousel-services .carousel-inner {
+    min-height: 450px;
+    overflow: hidden;
   }
 
   #info .content {
@@ -1944,6 +1956,11 @@ sup {
     margin-bottom: 0;
   }
 
+  #carousel-services .carousel-inner {
+    min-height: 525px;
+    overflow: hidden;
+  }
+
   .spec-padding-bottom {
     padding-bottom: 35% !important;
   }
@@ -1983,6 +2000,161 @@ sup {
     font-size: 1.2rem;
   }
 }
+
+/* Very Extra Small Devices, Phones @media only screen and (max-width: 280px) */
+@media only screen and (max-width: 280px) {
+  .intro {
+    padding: 4rem 5% 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+
+  p.subtitle {
+     font-size: 1.2rem;
+   }
+
+  .home-logo {
+    top: 7rem;
+    left: calc(50% - 4rem);
+  }
+
+  #clock {
+    font-size: 6rem;
+  }
+  #clock span {
+    font-size: 1.6rem;
+  }
+
+  .action-btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+  }
+  .action-btn:after {
+    display: none;
+  }
+  .action-btn:hover {
+    padding-right: 2.5rem;
+  }
+  .action-btn.jello {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    opacity: 1;
+  }
+
+  #social-nav {
+    position: absolute;
+    width: 100%;
+    bottom: 4rem;
+    right: 0;
+    text-align: center;
+  }
+  #social-nav ul li {
+    display: inline-block;
+    float: none;
+  }
+
+  #fp-nav {
+    display: none !important;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
+  .intro p {
+    font-size: 1.2rem;
+  }
+
+  .block-team {
+    margin-bottom: 2rem;
+  }
+  .block-team:last-child {
+    margin-bottom: 0;
+  }
+
+  #carousel-services .carousel-inner {
+    min-height: 600px;
+    overflow: hidden;
+  }
+
+  #carousel-services .carousel-inner .item .block-services .icon-services {
+    display: block;
+    font-size: 3rem;
+    color: #fff600;
+  }
+  .spec-padding-bottom {
+    padding-bottom: 35% !important;
+  }
+
+  #contact-form button#valid-form {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+  #contact-form .form-control {
+    font-size: 1.2rem;
+  }
+
+  #info {
+    padding: 10% 0;
+  }
+  #info .content {
+    padding: 0 5%;
+  }
+  #info .content .brand-logo {
+    max-width: 12rem;
+    margin-bottom: 2rem;
+  }
+  #info .content #subscribe #notifyMe .form-group .form-control {
+    font-size: 1.2rem;
+  }
+
+  #subscribe #notifyMe {
+    margin-top: 0;
+  }
+
+  #subscribe #notifyMe .form-group .form-control {
+    width: 95%;
+  }
+
+  #subscribe #notifyMe .form-group button.submit {
+    margin-top: 2rem;
+  }
+
+  .section .text-left-block .left-center-text {
+    padding:  rem 10%;
+  }
+
+  .block-message {
+    padding: 0.5rem 0.2rem;
+  }
+
+  p.notify-valid {
+    font-size: 1rem;
+  }
+
+  .copyright {
+    left: 2rem;
+    font-size: 1rem;
+  }
+}
+
 /* Only for tablet in landscape mode @media only screen and (max-device-width: 1024px) and (orientation: landscape) */
 /* Only for phone in landscape mode @media screen and (max-device-width: 667px) and (orientation: landscape) */
 @media screen and (max-device-width: 667px) and (orientation: landscape) {

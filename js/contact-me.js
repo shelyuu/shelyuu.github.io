@@ -19,7 +19,7 @@ $(document).ready(function() {
         var user_email      = $('input[name=email-address]').val();
         var user_company    = $('input[name=company]').val();
         var user_phone      = $('input[name=phone]').val();
-        var user_message    = $('textarea[name=message]').val();
+        var user_message    = $('textarea[name=message]').val();    
        
         // Datadata to be sent to server
         post_data = {'fromWebsite':current_domain,'sendtoEmail':send_toEmail,'templateId':template_id,'templateType':template_type,
