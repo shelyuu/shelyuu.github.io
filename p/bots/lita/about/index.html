@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="shelyuu">
     <title>Lita - Explore Tenun Pahang</title>
 
+    <!-- ================= Favicons ================== -->
+    <!-- Standard -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-retina-ipad.png">
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-retina-iphone.png">
+    <!-- Standard iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-standard-ipad.png">
+    <!-- Standard iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
+    
     <!-- ============== Resources style ============== -->
     <link rel="stylesheet" type="text/css" href="/css/style-botlita.css" />
 </head>
@@ -15,13 +28,26 @@
     </header>
 
     <main>
-        <p>Welcome to the world of Tenun Pahang, where tradition meets modernity in a vibrant tapestry of colors and stories! I'm Lita, your friendly guide to the rich heritage of Tenun Pahang from the heart of Malaysia. With a touch of modern flair and a dash of conversational charm, I'm here to make learning about our cultural treasure an engaging experience.</p>
-        <p>Indulge in the fascinating history of Royal Pahang Weaves, where threads intertwine to tell tales of artistry passed down through generations. Discover the intricate patterns that echo the voices of skilled artisans and the rich cultural tapestry that defines the essence of Pahang.</p>
-        <a rel="noopener" class="cta-button" href="/p/bots/lita/" target="_self">Chat to Lita Now</a>
-        <div class="image-container">
-            <img src="/img/bots/weaves-image_brown.jpg" alt="Royal Pahang Weaves">
-            <img src="/img/bots/weaves-image_blue.jpg" alt="Royal Pahang Weaves">
-            <img src="/img/bots/weaves-image_purple.jpg" alt="Royal Pahang Weaves">
+        <input type="radio" name="tab" id="tab1" class="tab-button" checked>
+        <label for="tab1" class="tab-button">About</label>
+
+        <input type="radio" name="tab" id="tab2" class="tab-button">
+        <label for="tab2" class="tab-button">Resources</label>
+
+        <div id="content1" class="tab-content">
+            <p>Welcome to the world of Tenun Pahang, where tradition meets modernity in a vibrant tapestry of colors and stories! I'm Lita, your friendly guide to the rich heritage of Tenun Pahang from the heart of Malaysia. With a touch of modern flair and a dash of conversational charm, I'm here to make learning about our cultural treasure an engaging experience.</p>
+            <p>Indulge in the fascinating history of Royal Pahang Weaves, where threads intertwine to tell tales of artistry passed down through generations. Discover the intricate patterns that echo the voices of skilled artisans and the rich cultural tapestry that defines the essence of Pahang.</p>
+            <a rel="noopener" class="cta-button" href="/p/bots/lita/" target="_self">Chat to Lita Now</a>
+            <div class="image-container">
+                <img src="/img/bots/weaves-image_brown.jpg" alt="Royal Pahang Weaves">
+                <img src="/img/bots/weaves-image_blue.jpg" alt="Royal Pahang Weaves">
+                <img src="/img/bots/weaves-image_purple.jpg" alt="Royal Pahang Weaves">
+            </div>
+            <small>Image from <a href="https://pinkjambu.com/">pink jambu</a>.</small>
+        </div>
+
+        <div id="content2" class="tab-content">
+            <p>This is the content for Tab 2.</p>
         </div>
     </main>
 

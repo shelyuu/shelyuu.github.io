@@ -310,10 +310,10 @@ a {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #00af94;
 }
 a:hover {
-  color: #00af94;
+  color: #b1a8e4;
   text-decoration: none !important;
   outline: none !important;
 }
