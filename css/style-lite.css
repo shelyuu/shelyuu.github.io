@@ -51,6 +51,7 @@ footer, header, hgroup, menu, nav, section, main {
 
 body {
   line-height: 1;
+  overflow: hidden;
 }
 
 ol, ul {
@@ -79,7 +80,7 @@ table {
   width: 100vw;
   height: 100vh;
   background: #0e3c69;
-  position: fixed;
+  position: relative;
   z-index: 999999;
 }
 #loading.vanish {
