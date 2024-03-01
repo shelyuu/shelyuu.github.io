@@ -90,7 +90,7 @@ table {
 }
 #loading:after {
   content: '';
-  background: url(../img/overlay.svg);
+  background: url(/img/overlay.svg);
   background-size: cover;
   background-position: center center;
   position: absolute;
@@ -260,7 +260,7 @@ body {
   font-weight: normal;
   font-style: normal;
   font-size: 1.4rem;
-  line-height: 1.8;
+  line-height: 1.8; 
   font-weight: 400;
   letter-spacing: 0;
   height: 100%;
