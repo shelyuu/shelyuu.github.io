@@ -1735,6 +1735,7 @@ a.link-nav:hover .multiscroll-tooltip {
   -moz-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
   transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 #social-nav ul li a:hover {
   color: #00fbd5;

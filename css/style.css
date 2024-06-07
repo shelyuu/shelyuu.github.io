@@ -430,8 +430,57 @@ sup {
   text-align: right;
 }
 
+.valign-middle {
+  vertical-align: middle;
+}
+
+.p-1 {
+  padding: .25rem
+}
+
+.p-4 {
+  padding: 1rem
+}
+
+.p-8 {
+  padding: 2rem
+}
+
+.px-3 {
+  padding-left: .75rem;
+  padding-right: .75rem
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+
+.py-2 {
+  padding-bottom: .5rem;
+  padding-top: .5rem
+}
+
+.py-5 {
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem
+}
+
+.pt-12 {
+  padding-top: 3rem
+}
+
+.pt-24 {
+  padding-top: 6rem
+}
+
 .no-margin-bottom {
   margin-bottom: 0;
+}
+
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .opacity-0 {
@@ -773,6 +822,10 @@ sup {
   z-index: 999;
 }
 
+.img-small {
+  max-width: 200px;
+}
+
 .fp-section.fp-table, .fp-slide.fp-table {
   display: table;
   table-layout: fixed;
@@ -780,6 +833,25 @@ sup {
   width: 100%;
   overflow: hidden;
 }
+
+.fpc {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  touch-action: none;
+  transform: translate3d(0px, 0px, 0px);}
+
+/* set div to middle vertically */
+.fpc .fpc-v {
+  display: table-cell;
+  vertical-align: middle;}
+
+/* set div to middle horizontally */
+.fpc .fpc-h {
+  display: flex;
+  vertical-align: middle;
+  text-align: center;}
 
 /* ------------------------------------- */
 /* 2. Home ............................. */
@@ -1723,6 +1795,7 @@ sup {
   -moz-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
   transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 #social-nav ul li a:hover {
   color: #00bda1;
