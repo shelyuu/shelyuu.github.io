@@ -60,19 +60,87 @@
 * License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -82,8 +150,18 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, main {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
     display: block;
 }
 
@@ -91,16 +169,20 @@ body {
     line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
     quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
@@ -206,8 +288,8 @@ table {
 }
 
 .flipOutYCustom {
-  @include backface-visibility(visible !important);
-  @include animation-name(flipOutYCustom);
+    @include backface-visibility(visible !important);
+    @include animation-name(flipOutYCustom);
 }
 
 @include keyframes(flipOutYCustom) {
@@ -251,14 +333,18 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     width: 100%;
 }
 
-body, input, select, textarea {
+body,
+input,
+select,
+textarea {
     @include transition(all $fast-transition ease-in-out);
 }
 
@@ -274,7 +360,8 @@ a {
         outline: none !important;
     }
 
-    &:active, &:focus {
+    &:active,
+    &:focus {
         outline: none !important;
         text-decoration: none !important;
         color: $white;
@@ -285,18 +372,22 @@ button {
     @include transition(all $fast-transition ease-in-out);
     cursor: pointer;
 
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
         outline: none !important;
         text-decoration: none !important;
         color: $shark;
     }
 }
 
-strong, b {
+strong,
+b {
     font-weight: $bold;
 }
 
-em, i {
+em,
+i {
     font-style: italic;
 }
 
@@ -313,7 +404,12 @@ p {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $white;
     font-family: $montserrat-font;
     font-weight: $normal;
@@ -420,102 +516,118 @@ sup {
 }
 
 .action-btn {
-        font-family: $montserrat-font;
-        background: $caribbean-green;
-        font-weight: $normal;
-        padding: 1rem 2.5rem;
-        color: $white;
-        @include border-radius(10rem);
-        border: none;
-        position: fixed;
-        top: 3rem;
-        right: 3rem;
-        z-index: 999;
-        text-transform: uppercase;
-        overflow: hidden;
+    font-family: $montserrat-font;
+    background: $caribbean-green;
+    font-weight: $normal;
+    padding: 1rem 2.5rem;
+    color: $white;
+    @include border-radius(10rem);
+    border: none;
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    z-index: 999;
+    text-transform: uppercase;
+    overflow: hidden;
 
-        &:after {
-            font-family: 'FontAwesome';
-            content: '\f0a2';
-            position: absolute;
-            opacity: 0;
-            top: 0.4rem;
-            right: -2rem;
-            font-size: 2rem;
-            @include transition(all $fast-transition ease-in-out);
-            @include animation(ring 1.5s infinite linear);
+    &:after {
+        font-family: 'FontAwesome';
+        content: '\f0a2';
+        position: absolute;
+        opacity: 0;
+        top: 0.4rem;
+        right: -2rem;
+        font-size: 2rem;
+        @include transition(all $fast-transition ease-in-out);
+        @include animation(ring 1.5s infinite linear);
+    }
+
+    @include keyframes(ring) {
+        0% {
+            @include transform(rotate(0deg));
         }
 
-        @include keyframes(ring) {
-            0% {
-                @include transform(rotate(0deg));
-            }
-            6.25% {
-                @include transform(rotate(-2deg));
-            }
-            12.5% {
-                @include transform(rotate(5deg));
-            }
-            18.75% {
-                @include transform(rotate(-10deg));
-            }
-            25% {
-                @include transform(rotate(15deg));
-            }
-            31.25% {
-                @include transform(rotate(-20deg));
-            }
-            37.5% {
-                @include transform(rotate(25deg));
-            }
-            43.75% {
-                @include transform(rotate(-30deg));
-            }
-            50% {
-                @include transform(rotate(35deg));
-            }
-            56.25% {
-                @include transform(rotate(-30deg));
-            }
-            62.5% {
-                @include transform(rotate(25deg));
-            }
-            68.75% {
-                @include transform(rotate(-20deg));
-            }
-            75% {
-                @include transform(rotate(15deg));
-            }
-            81.25% {
-                @include transform(rotate(-10deg));
-            }
-            87.5% {
-                @include transform(rotate(5deg));
-            }
-            93.75% {
-                @include transform(rotate(-2deg));
-            }
-            100% {
-                @include transform(rotate(0deg));
-            }
+        6.25% {
+            @include transform(rotate(-2deg));
         }
 
-        &:hover {
-            background: lighten($caribbean-green, 10%);
-            color: $white;
-            border-color: $caribbean-green;
-            padding-right: 4.5rem;
+        12.5% {
+            @include transform(rotate(5deg));
+        }
 
-            &:after {
-              opacity: 1;
-              right: 1.5rem;
-            }
+        18.75% {
+            @include transform(rotate(-10deg));
+        }
+
+        25% {
+            @include transform(rotate(15deg));
+        }
+
+        31.25% {
+            @include transform(rotate(-20deg));
+        }
+
+        37.5% {
+            @include transform(rotate(25deg));
+        }
+
+        43.75% {
+            @include transform(rotate(-30deg));
+        }
+
+        50% {
+            @include transform(rotate(35deg));
+        }
+
+        56.25% {
+            @include transform(rotate(-30deg));
+        }
+
+        62.5% {
+            @include transform(rotate(25deg));
+        }
+
+        68.75% {
+            @include transform(rotate(-20deg));
+        }
+
+        75% {
+            @include transform(rotate(15deg));
+        }
+
+        81.25% {
+            @include transform(rotate(-10deg));
+        }
+
+        87.5% {
+            @include transform(rotate(5deg));
+        }
+
+        93.75% {
+            @include transform(rotate(-2deg));
+        }
+
+        100% {
+            @include transform(rotate(0deg));
         }
     }
 
+    &:hover {
+        background: lighten($caribbean-green, 10%);
+        color: $white;
+        border-color: $caribbean-green;
+        padding-right: 4.5rem;
+
+        &:after {
+            opacity: 1;
+            right: 1.5rem;
+        }
+    }
+}
+
 .section {
     text-align: center;
-    @include transition(all $slow-transition ease-in-out); 
+    @include transition(all $slow-transition ease-in-out);
 }
 
 .text-left-block {
@@ -560,7 +672,8 @@ sup {
 //     overflow-y: hidden !important;
 // }
 
-.fp-section.fp-table, .fp-slide.fp-table {
+.fp-section.fp-table,
+.fp-slide.fp-table {
     display: table;
     table-layout: fixed;
     left: 0;
@@ -642,7 +755,8 @@ sup {
             border-color: $white !important;
         }
 
-        &:focus, &:active {
+        &:focus,
+        &:active {
             background: $white;
             color: $ebony-clay;
         }
@@ -789,7 +903,7 @@ sup {
     }
 }
 
-.slideshow-services{
+.slideshow-services {
     height: 100vh !important;
 }
 
@@ -878,7 +992,7 @@ sup {
                             font-weight: $normal;
                             text-transform: none;
                             font-size: 1rem;
-                        margin-top: 1rem;
+                            margin-top: 1rem;
                         }
                     }
 
@@ -975,7 +1089,8 @@ sup {
         @include transition(all $fast-transition ease-in-out);
         text-align: left;
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             box-shadow: none;
             background: darken($bright-gray, 4%);
         }
@@ -1003,7 +1118,7 @@ sup {
         font-weight: $normal;
         text-transform: uppercase;
         padding: 1.4rem 2.5rem;
-                font-size: 1.4rem;
+        font-size: 1.4rem;
         color: $white;
         margin: auto;
         margin-top: 2rem;
@@ -1023,7 +1138,8 @@ sup {
     color: lighten($raven, 15%);
     position: absolute;
 
-    .success-message, .error-message {
+    .success-message,
+    .error-message {
 
         p {
             color: lighten($raven, 15%) !important;
@@ -1080,6 +1196,7 @@ sup {
         }
     }
 }
+
 /* ------------------------------------- */
 /* 7. Navigation ....................... */
 /* ------------------------------------- */
@@ -1133,9 +1250,9 @@ sup {
         }
     }
 
-    &.fp-show-active a.active + .fp-tooltip {
+    &.fp-show-active a.active+.fp-tooltip {
         @include animation(fade-tooltip 1.5s $smooth-transition cubic-bezier(0, 0, 0.58, 1));
-            @include animation-iteration-count(1);
+        @include animation-iteration-count(1);
     }
 }
 
@@ -1335,7 +1452,8 @@ sup {
                         color: $kind-shark;
                         @include transition(all $fast-transition ease-in-out);
 
-                        &:hover, &:focus {
+                        &:hover,
+                        &:focus {
                             box-shadow: none;
                             background: darken($athens-gray, 2%);
                         }
@@ -1364,7 +1482,7 @@ sup {
                         }
                     }
                 }
-            }  
+            }
         }
     }
 
@@ -1407,7 +1525,7 @@ sup {
         bottom: 3rem;
         left: 0;
         position: absolute;
-    }  
+    }
 }
 
 /* ------------------------------------- */
@@ -1417,7 +1535,7 @@ sup {
 #social-nav {
     position: absolute;
     opacity: 1;
-    right: 2rem;
+    left: 2rem;
     bottom: 2rem;
     z-index: 999;
 
@@ -1499,7 +1617,8 @@ sup {
         display: none !important;
     }
 
-    .fp-section.fp-table, .fp-slide.fp-table {
+    .fp-section.fp-table,
+    .fp-slide.fp-table {
         width: 100%;
         left: 0;
 
@@ -1507,7 +1626,7 @@ sup {
 
     .block-team ul.social-team {
         opacity: 1;
-            left: 2.5rem;
+        left: 2.5rem;
     }
 
     .carousel-inner {
@@ -1587,7 +1706,7 @@ sup {
 
         #social-nav {
             bottom: auto;
-            left: auto;
+            right: auto;
             width: 100%;
             position: relative;
             margin-top: 5rem;
@@ -1620,7 +1739,7 @@ sup {
             width: 100%;
         }
     }
-    
+
 }
 
 
@@ -1679,7 +1798,7 @@ sup {
         position: absolute;
         width: 100%;
         bottom: 4rem;
-        right: 0;
+        left: 0;
         text-align: center;
 
         ul {
@@ -1699,7 +1818,7 @@ sup {
     }
 
     .intro {
-        
+
 
         p {
             font-size: 1.2rem;
@@ -1734,6 +1853,7 @@ sup {
     #subscribe #notifyMe {
         margin-top: 0;
     }
+
     #subscribe #notifyMe .form-group .form-control {
         width: 95%;
     }
@@ -1807,7 +1927,7 @@ sup {
         position: relative;
         width: 100%;
         bottom: 0;
-        right: 0;
+        left: 0;
         text-align: center;
 
         ul {
@@ -1883,7 +2003,7 @@ sup {
                             height: 5rem;
                             margin-top: 0;
                             float: left;
-                            @include border-radius(0 0.3rem 0.3rem 0); 
+                            @include border-radius(0 0.3rem 0.3rem 0);
                         }
                     }
                 }

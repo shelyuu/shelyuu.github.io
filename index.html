@@ -9,802 +9,870 @@
 * -->
 <html lang="en-us" class="no-js">
 
-	<head>
-		<meta charset="utf-8">
-		<title>shelyuu - the unicorn fish</title>
-		<meta name="description" content="A coding fish in the digital realm with years of coding experience. Eager to dive deeper into the vast ocean of knowledge, always learning more.">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="shelyuu">
+<head>
+	<meta charset="utf-8">
+	<title>shelyuu - the unicorn fish</title>
+	<meta name="description"
+		content="A coding fish in the digital realm with years of coding experience. Eager to dive deeper into the vast ocean of knowledge, always learning more.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="shelyuu">
 
-        <!-- ================= Favicons ================== -->
-        <!-- Standard -->
-        <link rel="shortcut icon" href="/img/favicon.png">
-        <!-- Retina iPad Touch Icon-->
-        <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon-retina-ipad.png">
-        <!-- Retina iPhone Touch Icon-->
-        <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon-retina-iphone.png">
-        <!-- Standard iPad Touch Icon-->
-        <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon-standard-ipad.png">
-        <!-- Standard iPhone Touch Icon-->
-        <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon-standard-iphone.png">
+	<!-- ================= Favicons ================== -->
+	<!-- Standard -->
+	<link rel="shortcut icon" href="/img/favicon.png">
+	<!-- Retina iPad Touch Icon-->
+	<link rel="apple-touch-icon" sizes="144x144" href="/img/favicon-retina-ipad.png">
+	<!-- Retina iPhone Touch Icon-->
+	<link rel="apple-touch-icon" sizes="114x114" href="/img/favicon-retina-iphone.png">
+	<!-- Standard iPad Touch Icon-->
+	<link rel="apple-touch-icon" sizes="72x72" href="/img/favicon-standard-ipad.png">
+	<!-- Standard iPhone Touch Icon-->
+	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicon-standard-iphone.png">
 
-		<!-- ============== Resources style ============== -->
-		<link rel="stylesheet" type="text/css" href="/css/style.css" />
-	</head>
+	<!-- ============== Resources style ============== -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
 
-	<body>
+<body>
 
-		<!-- +++ Page loading +++ -->
-		<div id="loading">
+	<!-- +++ Page loading +++ -->
+	<div id="loading">
 
-			<div id="preloader" class="animated-middle">
+		<div id="preloader" class="animated-middle">
 
-				<!-- Your logo -->
-				<img src="img/logo.png" alt="" class="loading-logo" />
+			<!-- Your logo -->
+			<img src="img/logo.png" alt="" class="loading-logo" />
 
-				<span class="loading-text">A unicorn fish is swimming</span>
+			<span class="loading-text">A unicorn fish is swimming</span>
 
-				<span class="load">
-					<span class="loading-dot"></span>
-					<span class="loading-dot"></span>
-					<span class="loading-dot"></span>
-					<span class="loading-dot"></span>
-				</span>
+			<span class="load">
+				<span class="loading-dot"></span>
+				<span class="loading-dot"></span>
+				<span class="loading-dot"></span>
+				<span class="loading-dot"></span>
+			</span>
+
+		</div>
+
+	</div>
+
+	<!-- +++ START - Fullpage sections +++ -->
+	<div id="fullpage">
+
+		<!-- +++ START - Home +++ -->
+		<div class="section" id="section0">
+
+			<!-- Your logo -->
+			<img src="/img/logo.png" alt="" class="home-logo" />
+
+			<!-- Background slideshow & light overlay -->
+			<div class="slideshow-home"></div>
+			<div class="slide-overlay"></div>
+
+			<div class="intro">
+
+				<!-- Countdown, set up your end date at the very bottom of this file -->
+				<!-- <div id="clock" class="container open-anim opacity-0"></div> -->
+
+				<p class="open-anim opacity-0">
+				<h2>The unicorn fish project has started.</h2><br>
+				Click on the go button to get more informations about our unicorn fish.</p>
+
+				<!-- Line 1695 in js/jquery.fullpage.js is the place to select the anchor scrolling to the section of your choice -->
+				<a id="button-more" class="light-btn open-anim opacity-0">Go</a>
+
+			</div>
+
+			<!-- Scroll indicator -->
+			<div class="scroll-indicator">
+
+				<!-- Line 1695 in js/jquery.fullpage.js is the place to select the anchor scrolling to the section of your choice -->
+				<a id="indicator-scroll"><i class="icon ion-ios-arrow-down"></i></a>
 
 			</div>
 
 		</div>
+		<!-- +++ END - Home +++ -->
 
-		<!-- +++ START - Fullpage sections +++ -->
-		<div id="fullpage">
+		<!-- +++ START - About +++ -->
+		<div class="section" id="section1">
 
-			<!-- +++ START - Home +++ -->
-			<div class="section" id="section0">
+			<section id="about" class="text-left-block">
 
-				<!-- Your logo -->
-        		<img src="/img/logo.png" alt="" class="home-logo" />
+				<div class="row row-no-margin">
 
-				<!-- Background slideshow & light overlay -->
-				<div class="slideshow-home"></div>
-				<div class="slide-overlay"></div>
+					<!-- The id="invert-slideshow" and id="invert-text" are used for the responsive mode under 1025px. With that, the slideshow is displayed after the text, looking better for the user experience. If you don't want to invert these divs, just remove the id.-->
+					<div id="invert-slideshow" class="col-xs-12 col-sm-6 col-lg-6 slideshow-about split-section"></div>
 
-				<div class="intro">
+					<div id="invert-text" class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section">
 
-					<!-- Countdown, set up your end date at the very bottom of this file -->
-					<!-- <div id="clock" class="container open-anim opacity-0"></div> -->
+						<div class="left-center-part">
 
-					<p class="open-anim opacity-0"><h2>The unicorn fish project has started.</h2><br>
-						Click on the go button to get more informations about our unicorn fish.</p>
+							<h2>Not just any fish</h2>
 
-					<!-- Line 1695 in js/jquery.fullpage.js is the place to select the anchor scrolling to the section of your choice -->
-					<a id="button-more" class="light-btn open-anim opacity-0">Go</a>
-
-				</div>
-
-				<!-- Scroll indicator -->
-				<div class="scroll-indicator">
-
-					<!-- Line 1695 in js/jquery.fullpage.js is the place to select the anchor scrolling to the section of your choice -->
-					<a id="indicator-scroll"><i class="icon ion-ios-arrow-down"></i></a>
-
-				</div>
-
-			</div>
-			<!-- +++ END - Home +++ -->
-
-			<!-- +++ START - About +++ -->
-			<div class="section" id="section1">
-
-				<section id="about" class="text-left-block">
-
-					<div class="row row-no-margin">
-
-						<!-- The id="invert-slideshow" and id="invert-text" are used for the responsive mode under 1025px. With that, the slideshow is displayed after the text, looking better for the user experience. If you don't want to invert these divs, just remove the id.-->
-						<div id="invert-slideshow" class="col-xs-12 col-sm-6 col-lg-6 slideshow-about split-section"></div>
-
-						<div id="invert-text" class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section">
-
-							<div class="left-center-part">
-
-								<h2>Not just any fish</h2>
-
-								<p>Swimming through the vast sea of technology, dive into the synergy of aquatic wisdom and technological prowess. </p>
-								<p>Weaving simple yet effective websites and systems, transcends the realms of both deep programming waters and sleek, user-friendly interfaces. </p>
-
-							</div>
+							<p>Swimming through the vast sea of technology, dive into the synergy of aquatic wisdom and
+								technological prowess. </p>
+							<p>Weaving simple yet effective websites and systems, transcends the realms of both deep
+								programming waters and sleek, user-friendly interfaces. </p>
 
 						</div>
 
 					</div>
 
-				</section>
+				</div>
 
-			</div>
-			<!-- +++ END - About +++ -->
+			</section>
 
-			<!-- +++ START - Services +++ -->
-			<div class="section" id="section2">
+		</div>
+		<!-- +++ END - About +++ -->
 
-				<section id="services" class="text-left-block">
+		<!-- +++ START - Services +++ -->
+		<div class="section" id="section2">
 
-					<div class="row row-no-margin">
+			<section id="services" class="text-left-block">
 
-						<div class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section">
-
-							<div class="left-center-part">
-
-								<h2>What does the fish do</h2>
-
-								<p>With our tailored digital solutions, we empower individuals and businesses with a distinct and impactful digital presence that resonate with people. </p>
-
-								<!-- +++ START - Carousel +++ -->
-								<div id="carousel-services" class="carousel slide" data-interval="6000" data-ride="carousel">
-
-							    	<!-- Carousel indicators -->
-							        <ol class="carousel-indicators">
-							            <li data-target="#carousel-services" data-slide-to="0" class="active"></li>
-							            <li data-target="#carousel-services" data-slide-to="1"></li>
-							            <li data-target="#carousel-services" data-slide-to="2"></li>
-							        </ol>
-
-							        <!-- START - Wrapper for carousel items -->
-							        <div class="carousel-inner">
-
-							        	<!-- Services 1 -->
-							            <div class="active item">
-
-				                			<!-- START - Services row -->
-											<div class="row">
-
-												<!-- START - Block services -->
-												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
-
-													<span class="icon-services icon ion-android-globe"></span>
-
-													<h3>Personalized Website Development</h3>
-
-													<p>Developing customized websites that go beyond aesthetics, focusing on user experience and aligning with the unique requirements of individuals and businesses.</p>
-
-												</div> <!-- END - Block services -->
-
-												<!-- START - Block services -->
-												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
-
-													<span class="icon-services icon ion-ios-flask-outline"></span>
-
-													<h3>Holistic Branding Solutions</h3>
-
-													<p>Delivering end-to-end branding solutions that encompass web design, system architecture, and API connectivity for a comprehensive and unified brand representation.</p>
-
-												</div> <!-- END - Block services -->
-
-											</div> <!-- END - Services row -->
-
-							            </div>
-
-							            <!-- Services 2 -->
-							            <div class="item">
-
-				                			<!-- START - Services row -->
-											<div class="row">
-
-												<!-- START - Block services -->
-												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
-
-													<span class="icon-services icon ion-ios-color-wand-outline"></span>
-													<h3>Technology Empowerment</h3>
-
-													<p>Empowering individuals and businesses by leveraging technology to enhance their capabilities, efficiency, and overall digital impact.</p>
-
-												</div> <!-- END - Block services -->
-
-												<!-- START - Block services -->
-												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
-
-													<span class="icon-services icon ion-network"></span>
-
-													<h3>API Integration Services</h3>
-
-													<p>Specializing in backend development for connecting disparate systems and platforms through efficient API integration, ensuring smooth data exchange and system interoperability.</p>
-
-												</div> <!-- END - Block services -->
-
-											</div> <!-- END - Services row -->
-
-							            </div>
-
-							            <!-- Services 3 -->
-							            <div class="item">
-
-				                			<!-- START - Services row -->
-											<div class="row">
-
-												<!-- START - Block services -->
-												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
-
-													<span class="icon-services icon ion-chatbubbles"></span>
-													<h3>Smart Chatbot Integration</h3>
-
-													<p>Implementing intelligent chatbots to enhance user engagement, provide real-time assistance, and streamline communication on websites.</p>
-
-												</div> <!-- END - Block services -->
-
-												<!-- START - Block services -->
-												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
-
-													<span class="icon-services icon ion-android-funnel"></span>
-
-													<h3>E-commerce solutions</h3>
-
-													<p>Crafting personalized e-commerce platforms with a smart backend design, focusing on scalability, security, and adaptability to meet specific business needs.</p>
-
-												</div> <!-- END - Block services -->
-
-											</div> <!-- END - Services row -->
-
-							            </div>
-
-							        </div>
-							        <!-- END - Wrapper for carousel items -->
-
-							        <!-- Left arrow -->
-							        <a title="carousel-l" class="carousel-control left" href="#carousel-services" data-slide="prev">
-							            <span class="icon-prev"></span>
-							        </a>
-
-							        <!-- Right arrow -->
-							        <a title="carousel-r" class="carousel-control right" href="#carousel-services" data-slide="next">
-							            <span class="icon-next"></span>
-							        </a>
-
-							    </div>
-							    <!-- +++ END - Carousel +++ -->
-
-						    </div>
-
-						</div>
-
-						<!-- Slideshow / Image services -->
-						<div class="col-xs-12 col-sm-6 col-lg-6 slideshow-services split-section"></div>
-
-					</div>
-
-				</section>
-
-			</div>
-			<!-- +++ END - Services +++ -->
-
-			<!-- +++ START - Portfolio +++ -->
-			<div class="section" id="section3">
-
-		        <section id="portfolio" class="text-left-block">
-
-		        	<div class="col-xs-12 col-sm-6 col-lg-6 split-section no-padding">
-
-			            <div class="portfolio my-gallery" itemscope itemtype="https://schema.org/ImageGallery">
-
-			                <!-- 1 -->
-			                <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
-
-			                    <a href="img/gallery-1.jpg" class="gallery-link small" data-image="img/gallery-1.jpg" itemprop="contentUrl" data-size="1920x1280">
-
-			                        <img src="img/gallery-1.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" />
-
-			                    </a>
-
-			                    <figcaption itemprop="caption description">
-
-			                        <div class="photo-details">
-
-			                            <h4>Get in the Sea <small>unicorn fish from the sea</small></h4>
-
-			                            <p>The mysterious unicorn fish swim away with your mind.</p>
-
-			                        </div>
-
-			                    </figcaption>
-
-			                </figure>
-
-			                <!-- 2 -->
-			                <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
-
-			                    <a href="img/gallery-2.jpg" class="gallery-link small" data-image="img/gallery-2.jpg" itemprop="contentUrl" data-size="1920x1280">
-
-			                        <img src="img/gallery-2.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" />
-
-			                    </a>
-
-			                    <figcaption itemprop="caption description">
-
-			                        <div class="photo-details">
-
-			                            <h4>Get in the Sea <small>unicorn fish from the sea</small></h4>
-
-			                            <p>The mysterious unicorn fish swim away with your mind again.</p>
-
-			                        </div>
-
-			                    </figcaption>
-
-			                </figure>
-
-			                <!-- 3 -->
-			                <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
-
-			                    <a href="img/gallery-3.jpg" class="gallery-link small" data-image="img/gallery-3.jpg" itemprop="contentUrl" data-size="1920x1280">
-
-			                        <img src="img/gallery-3.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" />
-
-			                    </a>
-
-			                    <figcaption itemprop="caption description">
-
-			                        <div class="photo-details">
-
-			                            <h4>Get in the Sea <small>unicorn fish from the sea</small></h4>
-
-			                            <p>The mysterious unicorn fish swim away with your mind again and again.</p>
-
-			                        </div>
-
-			                    </figcaption>
-
-			                </figure>
-
-			                <!-- 4 -->
-			                <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
-
-			                    <a href="img/gallery-4.jpg" class="gallery-link small" data-image="img/gallery-4.jpg" itemprop="contentUrl" data-size="1920x1280">
-
-			                        <img src="img/gallery-4.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" />
-
-			                    </a>
-
-			                    <figcaption itemprop="caption description">
-
-			                        <div class="photo-details">
-
-			                            <h4>Get in the Sea <small>unicorn fish from the sea</small></h4>
-
-			                            <p>The mysterious unicorn fish swim away with all the sadness.</p>
-
-			                        </div>
-
-			                    </figcaption>
-
-			                </figure>
-
-			                <!-- 5 -->
-			                <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
-
-			                    <a href="img/gallery-5.jpg" class="gallery-link small" data-image="img/gallery-5.jpg" itemprop="contentUrl" data-size="1920x1280">
-
-			                        <img src="img/gallery-5.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" />
-
-			                    </a>
-
-			                    <figcaption itemprop="caption description">
-
-			                        <div class="photo-details">
-
-			                            <h4>Bot Lita<small> Explore the Beauty of Tenun Pahang</small></h4>
-
-			                            <p><a href="p/bots/lita/about/">Click to know more</a></p>
-
-			                        </div>
-
-			                    </figcaption>
-
-			                </figure>
-
-			                <!-- 6 -->
-			                <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
-
-			                    <a href="img/gallery-6.jpg" class="gallery-link small" data-image="img/gallery-6.jpg" itemprop="contentUrl" data-size="1920x1280">
-
-			                        <img src="img/gallery-6.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" />
-
-			                    </a>
-
-			                    <figcaption itemprop="caption description">
-
-			                        <div class="photo-details">
-
-			                            <h4>Get in the Sea <small>unicorn fish from the sea</small></h4>
-
-			                            <p>The mysterious unicorn fish swim away, and the game begins.</p>
-
-			                        </div>
-
-			                    </figcaption>
-
-			                </figure>
-
-			            </div>
-
-		            </div>
+				<div class="row row-no-margin">
 
 					<div class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section">
 
 						<div class="left-center-part">
 
-							<h2>Introducing our fishes</h2>
+							<h2>What does the fish do</h2>
 
-							<p>Kelp, red algae and seagrass.</p>
+							<p>With our tailored digital solutions, we empower individuals and businesses with a
+								distinct and impactful digital presence that resonate with people. </p>
 
-							<!-- START - Team -->
-							<div class="row">
+							<!-- +++ START - Carousel +++ -->
+							<div id="carousel-services" class="carousel slide" data-interval="6000"
+								data-ride="carousel">
 
-								<!-- 1 -->
-								<div class="col-xs-12 col-sm-6 col-lg-6 block-team">
+								<!-- Carousel indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#carousel-services" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-services" data-slide-to="1"></li>
+									<li data-target="#carousel-services" data-slide-to="2"></li>
+								</ol>
 
-									<ul class="social-team">
+								<!-- START - Wrapper for carousel items -->
+								<div class="carousel-inner">
 
-										<!-- Info -->
-										<li>
-											<a title="info-link" href="../p/linkbio/"><i class="fa-solid fa-circle-info"></i></a>
-										</li>
-									</ul>
+									<!-- Services 1 -->
+									<div class="active item">
 
-									<img src="img/member-1.png" alt="" class="img-responsive team-member" />
+										<!-- START - Services row -->
+										<div class="row">
 
-									<h3>shel.yuu<small> THE ORIGIN</small></h3>
+											<!-- START - Block services -->
+											<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
 
-									<p>blob blob blooooob. i created unicorn fish.</p>
+												<span class="icon-services icon ion-android-globe"></span>
+
+												<h3>Personalized Website Development</h3>
+
+												<p>Developing customized websites that go beyond aesthetics, focusing on
+													user experience and aligning with the unique requirements of
+													individuals and businesses.</p>
+
+											</div> <!-- END - Block services -->
+
+											<!-- START - Block services -->
+											<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+												<span class="icon-services icon ion-ios-flask-outline"></span>
+
+												<h3>Holistic Branding Solutions</h3>
+
+												<p>Delivering end-to-end branding solutions that encompass web design,
+													system architecture, and API connectivity for a comprehensive and
+													unified brand representation.</p>
+
+											</div> <!-- END - Block services -->
+
+										</div> <!-- END - Services row -->
+
+									</div>
+
+									<!-- Services 2 -->
+									<div class="item">
+
+										<!-- START - Services row -->
+										<div class="row">
+
+											<!-- START - Block services -->
+											<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+												<span class="icon-services icon ion-ios-color-wand-outline"></span>
+												<h3>Technology Empowerment</h3>
+
+												<p>Empowering individuals and businesses by leveraging technology to
+													enhance their capabilities, efficiency, and overall digital impact.
+												</p>
+
+											</div> <!-- END - Block services -->
+
+											<!-- START - Block services -->
+											<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+												<span class="icon-services icon ion-network"></span>
+
+												<h3>API Integration Services</h3>
+
+												<p>Specializing in backend development for connecting disparate systems
+													and platforms through efficient API integration, ensuring smooth
+													data exchange and system interoperability.</p>
+
+											</div> <!-- END - Block services -->
+
+										</div> <!-- END - Services row -->
+
+									</div>
+
+									<!-- Services 3 -->
+									<div class="item">
+
+										<!-- START - Services row -->
+										<div class="row">
+
+											<!-- START - Block services -->
+											<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+												<span class="icon-services icon ion-chatbubbles"></span>
+												<h3>Smart Chatbot Integration</h3>
+
+												<p>Implementing intelligent chatbots to enhance user engagement, provide
+													real-time assistance, and streamline communication on websites.</p>
+
+											</div> <!-- END - Block services -->
+
+											<!-- START - Block services -->
+											<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+												<span class="icon-services icon ion-android-funnel"></span>
+
+												<h3>E-commerce solutions</h3>
+
+												<p>Crafting personalized e-commerce platforms with a smart backend
+													design, focusing on scalability, security, and adaptability to meet
+													specific business needs.</p>
+
+											</div> <!-- END - Block services -->
+
+										</div> <!-- END - Services row -->
+
+									</div>
 
 								</div>
+								<!-- END - Wrapper for carousel items -->
 
-								<!-- 2 -->
-								<div class="col-xs-12 col-sm-6 col-lg-6 block-team">
+								<!-- Left arrow -->
+								<a title="carousel-l" class="carousel-control left" href="#carousel-services"
+									data-slide="prev">
+									<span class="icon-prev"></span>
+								</a>
 
-									<ul class="social-team">
-
-										<!-- Chatbot -->
-										<li>
-											<a title="chatbot-link" href="https://beta.character.ai/chat2?char=m1pFVcgLmy1zhlGvWzFgle5wEbN29GVMICk2Z01aTG0"><i class="fa fa-commenting"></i></a>
-										</li>
-
-									</ul>
-
-									<img src="img/member-2.png" alt="" class="img-responsive team-member" />
-
-									<h3>Unicorn fish<small> CHATBOT & MASCOT</small></h3>
-
-									<p>Blob blob blob, blob blobloblob, blob.</p>
-
-								</div>
+								<!-- Right arrow -->
+								<a title="carousel-r" class="carousel-control right" href="#carousel-services"
+									data-slide="next">
+									<span class="icon-next"></span>
+								</a>
 
 							</div>
-							<!-- END - Team -->
+							<!-- +++ END - Carousel +++ -->
 
 						</div>
 
 					</div>
 
-		        </section>
+					<!-- Slideshow / Image services -->
+					<div class="col-xs-12 col-sm-6 col-lg-6 slideshow-services split-section"></div>
 
-			</div>
-			<!-- +++ END - Portfolio +++ -->
+				</div>
 
-			<!-- +++ START - Contact +++ -->
-			<div class="section" id="section4">
-
-				<section id="contact" class="text-left-block">
-
-					<div class="row row-no-margin">
-
-						<div class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section spec-padding-bottom">
-
-							<div class="left-center-part">
-
-								<h2>Get in touch</h2>
-
-		                		<p class="subtitle">Have a swim with unicorn fish 
-									<!-- <strong>Tuesday through Friday</strong>, from 12:00 AM to 12:00 PM.<br> -->
-									anytime.<br>
-									Contact us via
-									<!-- <strong>unicorn fish Number : </strong><a href="tel:000-00000000" class="phone-mail-link">(+000) 00000000</a> or  -->
-									<strong>Email</strong> : <a href="mailto:shelyuu@gmail.com" class="phone-mail-link">support@shelyuu.com</a>
-								</p>
-		                		<div class="row">
-				                    <div class="col-xs-12 col-sm-12 col-lg-12">
-										
-				                        <!-- START - Contact Form -->
-				                        <form id="contact-form" name="contact-form" method="POST" data-name="Contact Form">
-
-				                            <div class="row">
-
-				                            	<!-- ! Anti-spam field ! Invisible for users, the major part of bots will write something in this field, then, they will be blocked and no spam in your inbox will come.  -->
-				                                <div class="col-xs-12 col-sm-12 col-lg-12 display-none">
-				                                    <div class="form-group">
-				                                        <input type="text" id="checking" class="form form-control" placeholder="Leave this field empty" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Leave this field empty'" name="checking" data-name="Checking">
-				                                    </div>
-				                                </div>
-
-				                                <!-- Full name -->
-				                                <div class="col-xs-12 col-sm-6 col-lg-6">
-				                                    <div class="form-group">
-				                                        <input type="text" id="name" class="form form-control" placeholder="Name*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name*'" name="name" data-name="Name" required>
-				                                    </div>
-				                                </div>
-
-				                                <!-- E-mail -->
-				                                <div class="col-xs-12 col-sm-6 col-lg-6">
-				                                    <div class="form-group">
-				                                        <input type="email" id="email" class="form form-control" placeholder="Email Address*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address*'" name="email-address" data-name="Email Address" required>
-				                                    </div>
-				                                </div>
-
-				                                <!-- Company -->
-				                                <div class="col-xs-12 col-sm-6 col-lg-6">
-				                                    <div class="form-group">
-				                                        <input type="text" id="company" class="form form-control" placeholder="Company name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Company name'" name="company" data-name="Company" required>
-				                                    </div>
-				                                </div>
-
-				                                <!-- Phone -->
-				                                <div class="col-xs-12 col-sm-6 col-lg-6">
-				                                    <div class="form-group">
-				                                        <input type="tel" id="phone" class="form form-control" placeholder="Phone number*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone number*'" name="phone" data-name="Phone" required>
-				                                    </div>
-				                                </div>
-
-				                                <!-- Message -->
-				                                <div class="col-xs-12 col-sm-12 col-lg-12">
-				                                    <div class="form-group">
-				                                        <textarea id="text-area" class="form textarea form-control" placeholder="Your message here*... 20 characters Min." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your message here*... 20 characters Min.'" name="message" data-name="Text Area" required></textarea>
-				                                    </div>
-				                                    <span class="sub-text">* Required fields</span>
-				                                </div>
-
-				                            </div>
-
-				                            <!-- Form submission -->
-				                            <button type="submit" id="valid-form" class="btn btn-color">Send my Message to unicorn fish</button>
-
-				                        </form>
-				                        <!-- END - Contact Form -->
-
-				                        <!-- START - Answer for the contact form is displayed in the next div, do not remove it. -->
-				                        <div id="block-answer">
-
-				                            <div id="answer"></div>
-
-				                        </div>
-				                        <!-- END - Answer... -->
-
-				                    </div>
-
-		               			</div>
-
-								<p class="copyright">©shelyuu 2023 - The Unicorn Fish. All rights reserved. </p>
-
-							</div>
-
-						</div>
-
-						<!-- Map -->
-						<div class="col-xs-12 col-sm-6 col-lg-6 map-info split-section">
-
-							<div id="map"></div>
-
-						</div>
-
-					</div>
-
-				</section>
-
-			</div>
-			<!-- +++ END - Contact +++ -->
+			</section>
 
 		</div>
-		<!-- +++ END - Fullpage sections +++ -->
+		<!-- +++ END - Services +++ -->
 
-		<!-- +++ START - Newsletter panel +++ -->
-		<div id="info">
+		<!-- +++ START - Portfolio +++ -->
+		<div class="section" id="section3">
 
-			<!-- Cross to close the Newsletter panel on top right -->
-			<button type="button" title="btn-close-newsletter" class="close-newsletter"><i class="icon ion-close-round"></i></button>
+			<section id="portfolio" class="text-left-block">
 
-			<div class="content">
+				<div class="col-xs-12 col-sm-6 col-lg-6 split-section no-padding">
 
-				<!-- Your logo -->
-        		<img src="img/logo.png" alt="" class="brand-logo" />
+					<div class="portfolio my-gallery" itemscope itemtype="https://schema.org/ImageGallery">
 
-                <p class="subtitle">Sign up to the newsletter to be one of the <strong>unicorn fish family</strong></p>
+						<!-- 1 -->
+						<figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope
+							itemtype="https://schema.org/ImageObject">
 
-                <!-- START - Newsletter Form -->
-				<div id="subscribe">
+							<a href="img/gallery-1.jpg" class="gallery-link small" data-image="img/gallery-1.jpg"
+								itemprop="contentUrl" data-size="1920x1280">
 
-	                <form action="php/notify-me-2.php" id="notifyMe" method="POST">
+								<img src="img/gallery-1.jpg" itemprop="thumbnail" alt="This is my work"
+									class="img-responsive gallery-img small-square" />
 
-	                    <div class="form-group">
+							</a>
 
-	                        <div class="controls">
+							<figcaption itemprop="caption description">
 
-	                        	<!-- Field  -->
-	                        	<input type="text" id="mail-sub" name="email" placeholder="Click here to write your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click here to write your email'" class="form-control email srequiredField" />
+								<div class="photo-details">
 
-	                        	<!-- Spinner top left during the submission -->
-	                        	<i class="fa fa-spinner opacity-0"></i>
+									<h4>Get in the Sea <small>unicorn fish from the sea</small></h4>
 
-	                            <!-- Button -->
-	                            <button type="button" class="btn btn-lg submit">Get notified</button>
+									<p>The mysterious unicorn fish swim away with your mind.</p>
 
-	                            <div class="clear"></div>
+								</div>
 
-	                        </div>
+							</figcaption>
 
-	                    </div>
+						</figure>
 
-	                </form>
+						<!-- 2 -->
+						<figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope
+							itemtype="https://schema.org/ImageObject">
 
-    			</div>
-    			<!-- END - Newsletter Form -->
+							<a href="img/gallery-2.jpg" class="gallery-link small" data-image="img/gallery-2.jpg"
+								itemprop="contentUrl" data-size="1920x1280">
+
+								<img src="img/gallery-2.jpg" itemprop="thumbnail" alt="This is my work"
+									class="img-responsive gallery-img small-square" />
+
+							</a>
+
+							<figcaption itemprop="caption description">
+
+								<div class="photo-details">
+
+									<h4>Get in the Sea <small>unicorn fish from the sea</small></h4>
+
+									<p>The mysterious unicorn fish swim away with your mind again.</p>
+
+								</div>
+
+							</figcaption>
+
+						</figure>
+
+						<!-- 3 -->
+						<figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope
+							itemtype="https://schema.org/ImageObject">
+
+							<a href="img/gallery-3.jpg" class="gallery-link small" data-image="img/gallery-3.jpg"
+								itemprop="contentUrl" data-size="1920x1280">
+
+								<img src="img/gallery-3.jpg" itemprop="thumbnail" alt="This is my work"
+									class="img-responsive gallery-img small-square" />
+
+							</a>
+
+							<figcaption itemprop="caption description">
+
+								<div class="photo-details">
+
+									<h4>Get in the Sea <small>unicorn fish from the sea</small></h4>
+
+									<p>The mysterious unicorn fish swim away with your mind again and again.</p>
+
+								</div>
+
+							</figcaption>
+
+						</figure>
+
+						<!-- 4 -->
+						<figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope
+							itemtype="https://schema.org/ImageObject">
+
+							<a href="img/gallery-4.jpg" class="gallery-link small" data-image="img/gallery-4.jpg"
+								itemprop="contentUrl" data-size="1920x1280">
+
+								<img src="img/gallery-4.jpg" itemprop="thumbnail" alt="This is my work"
+									class="img-responsive gallery-img small-square" />
+
+							</a>
+
+							<figcaption itemprop="caption description">
+
+								<div class="photo-details">
+
+									<h4>Get in the Sea <small>unicorn fish from the sea</small></h4>
+
+									<p>The mysterious unicorn fish swim away with all the sadness.</p>
+
+								</div>
+
+							</figcaption>
+
+						</figure>
+
+						<!-- 5 -->
+						<figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope
+							itemtype="https://schema.org/ImageObject">
+
+							<a href="img/gallery-5.jpg" class="gallery-link small" data-image="img/gallery-5.jpg"
+								itemprop="contentUrl" data-size="1920x1280">
+
+								<img src="img/gallery-5.jpg" itemprop="thumbnail" alt="This is my work"
+									class="img-responsive gallery-img small-square" />
+
+							</a>
+
+							<figcaption itemprop="caption description">
+
+								<div class="photo-details">
+
+									<h4>Bot Lita<small> Explore the Beauty of Tenun Pahang</small></h4>
+
+									<p><a href="p/bots/lita/about/">Click to know more</a></p>
+
+								</div>
+
+							</figcaption>
+
+						</figure>
+
+						<!-- 6 -->
+						<figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope
+							itemtype="https://schema.org/ImageObject">
+
+							<a href="img/gallery-6.jpg" class="gallery-link small" data-image="img/gallery-6.jpg"
+								itemprop="contentUrl" data-size="1920x1280">
+
+								<img src="img/gallery-6.jpg" itemprop="thumbnail" alt="This is my work"
+									class="img-responsive gallery-img small-square" />
+
+							</a>
+
+							<figcaption itemprop="caption description">
+
+								<div class="photo-details">
+
+									<h4>Get in the Sea <small>unicorn fish from the sea</small></h4>
+
+									<p>The mysterious unicorn fish swim away, and the game begins.</p>
+
+								</div>
+
+							</figcaption>
+
+						</figure>
+
+					</div>
+
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section">
+
+					<div class="left-center-part">
+
+						<h2>Introducing our fishes</h2>
+
+						<p>Kelp, red algae and seagrass.</p>
+
+						<!-- START - Team -->
+						<div class="row">
+
+							<!-- 1 -->
+							<div class="col-xs-12 col-sm-6 col-lg-6 block-team">
+
+								<ul class="social-team">
+
+									<!-- Info -->
+									<li>
+										<a title="info-link" href="../p/linkbio/"><i
+												class="fa-solid fa-circle-info"></i></a>
+									</li>
+								</ul>
+
+								<img src="img/member-1.png" alt="" class="img-responsive team-member" />
+
+								<h3>shel.yuu<small> THE ORIGIN</small></h3>
+
+								<p>blob blob blooooob. i created unicorn fish.</p>
+
+							</div>
+
+							<!-- 2 -->
+							<div class="col-xs-12 col-sm-6 col-lg-6 block-team">
+
+								<ul class="social-team">
+
+									<!-- Chatbot -->
+									<li>
+										<a title="chatbot-link"
+											href="https://beta.character.ai/chat2?char=m1pFVcgLmy1zhlGvWzFgle5wEbN29GVMICk2Z01aTG0"><i
+												class="fa fa-commenting"></i></a>
+									</li>
+
+								</ul>
+
+								<img src="img/member-2.png" alt="" class="img-responsive team-member" />
+
+								<h3>Unicorn fish<small> CHATBOT & MASCOT</small></h3>
+
+								<p>Blob blob blob, blob blobloblob, blob.</p>
+
+							</div>
+
+						</div>
+						<!-- END - Team -->
+
+					</div>
+
+				</div>
+
+			</section>
+
+		</div>
+		<!-- +++ END - Portfolio +++ -->
+
+		<!-- +++ START - Contact +++ -->
+		<div class="section" id="section4">
+
+			<section id="contact" class="text-left-block">
+
+				<div class="row row-no-margin">
+
+					<div class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section spec-padding-bottom">
+
+						<div class="left-center-part">
+
+							<h2>Get in touch</h2>
+
+							<p class="subtitle">Have a swim with unicorn fish
+								<!-- <strong>Tuesday through Friday</strong>, from 12:00 AM to 12:00 PM.<br> -->
+								anytime.<br>
+								Contact us via
+								<!-- <strong>unicorn fish Number : </strong><a href="tel:000-00000000" class="phone-mail-link">(+000) 00000000</a> or  -->
+								<strong>Email</strong> : <a href="mailto:shelyuu@gmail.com"
+									class="phone-mail-link">support@shelyuu.com</a>
+							</p>
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-lg-12">
+
+									<!-- START - Contact Form -->
+									<form id="contact-form" name="contact-form" method="POST" data-name="Contact Form">
+
+										<div class="row">
+
+											<!-- ! Anti-spam field ! Invisible for users, the major part of bots will write something in this field, then, they will be blocked and no spam in your inbox will come.  -->
+											<div class="col-xs-12 col-sm-12 col-lg-12 display-none">
+												<div class="form-group">
+													<input type="text" id="checking" class="form form-control"
+														placeholder="Leave this field empty"
+														onfocus="this.placeholder = ''"
+														onblur="this.placeholder = 'Leave this field empty'"
+														name="checking" data-name="Checking">
+												</div>
+											</div>
+
+											<!-- Full name -->
+											<div class="col-xs-12 col-sm-6 col-lg-6">
+												<div class="form-group">
+													<input type="text" id="name" class="form form-control"
+														placeholder="Name*" onfocus="this.placeholder = ''"
+														onblur="this.placeholder = 'Name*'" name="name" data-name="Name"
+														required>
+												</div>
+											</div>
+
+											<!-- E-mail -->
+											<div class="col-xs-12 col-sm-6 col-lg-6">
+												<div class="form-group">
+													<input type="email" id="email" class="form form-control"
+														placeholder="Email Address*" onfocus="this.placeholder = ''"
+														onblur="this.placeholder = 'Email Address*'"
+														name="email-address" data-name="Email Address" required>
+												</div>
+											</div>
+
+											<!-- Company -->
+											<div class="col-xs-12 col-sm-6 col-lg-6">
+												<div class="form-group">
+													<input type="text" id="company" class="form form-control"
+														placeholder="Company name" onfocus="this.placeholder = ''"
+														onblur="this.placeholder = 'Company name'" name="company"
+														data-name="Company" required>
+												</div>
+											</div>
+
+											<!-- Phone -->
+											<div class="col-xs-12 col-sm-6 col-lg-6">
+												<div class="form-group">
+													<input type="tel" id="phone" class="form form-control"
+														placeholder="Phone number*" onfocus="this.placeholder = ''"
+														onblur="this.placeholder = 'Phone number*'" name="phone"
+														data-name="Phone" required>
+												</div>
+											</div>
+
+											<!-- Message -->
+											<div class="col-xs-12 col-sm-12 col-lg-12">
+												<div class="form-group">
+													<textarea id="text-area" class="form textarea form-control"
+														placeholder="Your message here*... 20 characters Min."
+														onfocus="this.placeholder = ''"
+														onblur="this.placeholder = 'Your message here*... 20 characters Min.'"
+														name="message" data-name="Text Area" required></textarea>
+												</div>
+												<span class="sub-text">* Required fields</span>
+											</div>
+
+										</div>
+
+										<!-- Form submission -->
+										<button type="submit" id="valid-form" class="btn btn-color">Send my Message to
+											unicorn fish</button>
+
+									</form>
+									<!-- END - Contact Form -->
+
+									<!-- START - Answer for the contact form is displayed in the next div, do not remove it. -->
+									<div id="block-answer">
+
+										<div id="answer"></div>
+
+									</div>
+									<!-- END - Answer... -->
+
+								</div>
+							</div>
+							<p class="copyright">© Code Sea Hub 2025 (202403262314 / JM1012653-H). All rights reserved.
+							</p>
+						</div>
+
+					</div>
+
+					<!-- Map -->
+					<div class="col-xs-12 col-sm-6 col-lg-6 map-info split-section">
+
+						<div id="map"></div>
+
+					</div>
+
+				</div>
+
+			</section>
+
+		</div>
+		<!-- +++ END - Contact +++ -->
+
+	</div>
+	<!-- +++ END - Fullpage sections +++ -->
+
+	<!-- +++ START - Newsletter panel +++ -->
+	<div id="info">
+
+		<!-- Cross to close the Newsletter panel on top right -->
+		<button type="button" title="btn-close-newsletter" class="close-newsletter"><i
+				class="icon ion-close-round"></i></button>
+
+		<div class="content">
+
+			<!-- Your logo -->
+			<img src="img/logo.png" alt="" class="brand-logo" />
+
+			<p class="subtitle">Sign up to the newsletter to be one of the <strong>unicorn fish family</strong></p>
+
+			<!-- START - Newsletter Form -->
+			<div id="subscribe">
+
+				<form action="php/notify-me-2.php" id="notifyMe" method="POST">
+
+					<div class="form-group">
+
+						<div class="controls">
+
+							<!-- Field  -->
+							<input type="text" id="mail-sub" name="email" placeholder="Click here to write your email"
+								onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Click here to write your email'"
+								class="form-control email srequiredField" />
+
+							<!-- Spinner top left during the submission -->
+							<i class="fa fa-spinner opacity-0"></i>
+
+							<!-- Button -->
+							<button type="button" class="btn btn-lg submit">Get notified</button>
+
+							<div class="clear"></div>
+
+						</div>
+
+					</div>
+
+				</form>
+
+			</div>
+			<!-- END - Newsletter Form -->
+
+		</div>
+
+		<!-- Answer for the newsletter form is displayed in the next div, do not remove it. -->
+		<div class="block-message">
+
+			<div class="message">
+
+				<p class="notify-valid"></p>
 
 			</div>
 
-			<!-- Answer for the newsletter form is displayed in the next div, do not remove it. -->
-			<div class="block-message">
+		</div>
 
-				<div class="message">
+		<p class="spam-news"><i class="fa fa-lock"></i> Unicorn fish hate spam just as much as you do. Your email will
+			stay secret.</p>
 
-					<p class="notify-valid"></p>
+	</div>
+	<!-- +++ END - Newsletter panel +++ -->
 
+	<!-- +++ Button used for opening the newsletter panel +++ -->
+	<a id="open-newsletter" class="action-btn">Join the Fish</a>
+
+	<!-- +++ List of social media on the bottom right +++ -->
+	<div id="social-nav">
+
+		<ul>
+			<!-- github -->
+			<li>
+				<a rel="noopener" title="github-link" href="https://github.com/shelyuu" target="_blank"><i
+						class="fa-brands fa-github"></i></a>
+			</li>
+
+			<!-- Twitter -->
+			<!-- <li>
+				<a rel="noopener" title="twitter-link" href="https://twitter.com/shelyuu" target="_blank"><i
+						class="fa-brands fa-twitter"></i></a>
+			</li> -->
+
+			<!-- Linkedin -->
+			<!-- <li>
+					<a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+				</li> -->
+
+		</ul>
+
+	</div>
+
+	<!-- Root element of PhotoSwipe, the gallery. Must have class pswp. -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+		<!-- Background of PhotoSwipe.
+	        	It's a separate element as animating opacity is faster than rgba(). -->
+		<div class="pswp__bg"></div>
+
+		<!-- Slides wrapper with overflow:hidden. -->
+		<div class="pswp__scroll-wrap">
+
+			<!-- Container that holds slides.
+		            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+		            Don't modify these 3 item elements, data is added later on. -->
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
+
+			<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+			<div class="pswp__ui pswp__ui--hidden">
+
+				<div class="pswp__top-bar">
+
+					<!--  Controls are self-explanatory. Order can be changed. -->
+
+					<div class="pswp__counter"></div>
+
+					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+					<button class="pswp__button pswp__button--share" title="Share"></button>
+
+					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+					<!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+							<div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					<div class="pswp__share-tooltip"></div>
+				</div>
+
+				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+				</button>
+
+				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+				</button>
+
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
 				</div>
 
 			</div>
 
-			<p class="spam-news"><i class="fa fa-lock"></i> Unicorn fish hate spam just as much as you do. Your email will stay secret.</p>
-
-		</div>
-		<!-- +++ END - Newsletter panel +++ -->
-
-		<!-- +++ Button used for opening the newsletter panel +++ -->
-		<a id="open-newsletter" class="action-btn">Join the Fish</a>
-
-		<!-- +++ List of social media on the bottom right +++ -->
-		<div id="social-nav">
-
-			<ul>
-				<!-- github -->
-				<li>
-					<a rel="noopener" title="github-link" href="https://github.com/shelyuu" target="_blank"><i class="fa-brands fa-github"></i></a>
-				</li>
-
-				<!-- Twitter -->
-				<li>
-					<a rel="noopener" title="twitter-link" href="https://twitter.com/shelyuu" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-				</li>
-
-				<!-- Linkedin -->
-				<!-- <li>
-					<a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-				</li> -->
-
-			</ul>
-
 		</div>
 
-		<!-- Root element of PhotoSwipe, the gallery. Must have class pswp. -->
-		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+	</div>
+	<!-- /. Root element of PhotoSwipe. Must have class pswp. -->
 
-		    <!-- Background of PhotoSwipe.
-	        	It's a separate element as animating opacity is faster than rgba(). -->
-		    <div class="pswp__bg"></div>
+	<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+	<!-- ********** jQuery Resources ********** -->
+	<!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
 
-		    <!-- Slides wrapper with overflow:hidden. -->
-		    <div class="pswp__scroll-wrap">
+	<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/jquery.easings.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
 
-		        <!-- Container that holds slides.
-		            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-		            Don't modify these 3 item elements, data is added later on. -->
-		        <div class="pswp__container">
-		            <div class="pswp__item"></div>
-		            <div class="pswp__item"></div>
-		            <div class="pswp__item"></div>
-		        </div>
+	<!-- FullPage plugin -->
+	<script src="/js/jquery.fullPage.js"></script>
 
-		        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-		        <div class="pswp__ui pswp__ui--hidden">
+	<!-- Countdown plugin -->
+	<script src="/js/jquery.countdown.js"></script>
 
-		            <div class="pswp__top-bar">
+	<!-- Slideshow plugin -->
+	<script src="/js/vegas.js"></script>
 
-		                <!--  Controls are self-explanatory. Order can be changed. -->
+	<!-- Google Maps API and Skin -->
+	<script src="/js/map.js"></script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkfUqWfnqyPPnocC-3mRtxOB9wnJCW7mU&callback=initMap"></script>
 
-		                <div class="pswp__counter"></div>
+	<!-- PhotoSwipe Core JS file -->
+	<script src="/js/photoswipe.js"></script>
 
-		                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+	<!-- PhotoSwipe UI JS file -->
+	<script src="/js/photoswipe-ui-default.js"></script>
 
-		                <button class="pswp__button pswp__button--share" title="Share"></button>
+	<!-- Contact form plugin -->
+	<script src="/js/contact-me.js"></script>
 
-		                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+	<!-- Newsletter plugin -->
+	<script src="/js/notifyMe.js"></script>
 
-		                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-		                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-		                <div class="pswp__preloader">
-		                    <div class="pswp__preloader__icn">
-		                      <div class="pswp__preloader__cut">
-		                        <div class="pswp__preloader__donut"></div>
-		                      </div>
-		                    </div>
-		                </div>
-
-		            </div>
-
-		            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-		                <div class="pswp__share-tooltip"></div>
-		            </div>
-
-		            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-		            </button>
-
-		            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-		            </button>
-
-		            <div class="pswp__caption">
-		                <div class="pswp__caption__center"></div>
-		            </div>
-
-		        </div>
-
-		    </div>
-
-		</div>
-		<!-- /. Root element of PhotoSwipe. Must have class pswp. -->
-
-		<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
-        <!-- ********** jQuery Resources ********** -->
-        <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
-
-        <!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/jquery.easings.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
-
-		<!-- FullPage plugin -->
-		<script src="/js/jquery.fullPage.js"></script>
-
-		<!-- Countdown plugin -->
-        <script src="/js/jquery.countdown.js"></script>
-
-        <!-- Slideshow plugin -->
-        <script src="/js/vegas.js"></script>
-
-		<!-- Google Maps API and Skin -->
-		<script src="/js/map.js"></script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkfUqWfnqyPPnocC-3mRtxOB9wnJCW7mU&callback=initMap"></script>
-
-		<!-- PhotoSwipe Core JS file -->
-		<script src="/js/photoswipe.js"></script>
-
-		<!-- PhotoSwipe UI JS file -->
-		<script src="/js/photoswipe-ui-default.js"></script>
-
-		<!-- Contact form plugin -->
-		<script src="/js/contact-me.js"></script>
-
-		<!-- Newsletter plugin -->
-		<script src="/js/notifyMe.js"></script>
-
-		<script>
+	<script>
 		// Set up your end date just below
-		$('#clock').countdown('2023/09/29 00:00:00', function(event) {
+		$('#clock').countdown('2023/09/29 00:00:00', function (event) {
 
 			var $this = $(this).html(event.strftime(''
-			+ '<div class="col-xs-6 col-sm-3 col-lg-3">%D<span>Days</span></div> '
-			+ '<div class="col-xs-6 col-sm-3 col-lg-3">%H<span>Hours</span></div> '
-			+ '<div class="col-xs-6 col-sm-3 col-lg-3">%M<span>Minutes</span></div> '
-			+ '<div class="col-xs-6 col-sm-3 col-lg-3">%S<span>Seconds</span></div>'));
+				+ '<div class="col-xs-6 col-sm-3 col-lg-3">%D<span>Days</span></div> '
+				+ '<div class="col-xs-6 col-sm-3 col-lg-3">%H<span>Hours</span></div> '
+				+ '<div class="col-xs-6 col-sm-3 col-lg-3">%M<span>Minutes</span></div> '
+				+ '<div class="col-xs-6 col-sm-3 col-lg-3">%S<span>Seconds</span></div>'));
 
 		});
-		</script>
+	</script>
 
-		<!-- Main JS File -->
-		<script src="/js/main-fullpage.js"></script>
+	<!-- Main JS File -->
+	<script src="/js/main-fullpage.js"></script>
 
-	</body>
+</body>
 
 </html>

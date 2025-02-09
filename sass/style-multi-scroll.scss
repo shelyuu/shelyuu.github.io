@@ -59,19 +59,87 @@
 * License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -81,8 +149,18 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, main {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
     display: block;
 }
 
@@ -90,16 +168,20 @@ body {
     line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
     quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
@@ -205,8 +287,8 @@ table {
 }
 
 .flipOutYCustom {
-  @include backface-visibility(visible !important);
-  @include animation-name(flipOutYCustom);
+    @include backface-visibility(visible !important);
+    @include animation-name(flipOutYCustom);
 }
 
 @include keyframes(flipOutYCustom) {
@@ -250,14 +332,18 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     width: 100%;
 }
 
-body, input, select, textarea {
+body,
+input,
+select,
+textarea {
     @include transition(all $fast-transition ease-in-out);
 }
 
@@ -273,7 +359,8 @@ a {
         outline: none !important;
     }
 
-    &:active, &:focus {
+    &:active,
+    &:focus {
         outline: none !important;
         text-decoration: none !important;
         color: $white;
@@ -284,18 +371,22 @@ button {
     @include transition(all $fast-transition ease-in-out);
     cursor: pointer;
 
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
         outline: none !important;
         text-decoration: none !important;
         color: $shark;
     }
 }
 
-strong, b {
+strong,
+b {
     font-weight: $bold;
 }
 
-em, i {
+em,
+i {
     font-style: italic;
 }
 
@@ -312,7 +403,12 @@ p {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $white;
     font-family: $montserrat-font;
     font-weight: $normal;
@@ -419,102 +515,118 @@ sup {
 }
 
 .action-btn {
-        font-family: $montserrat-font;
-        background: $caribbean-green;
-        font-weight: $normal;
-        padding: 1rem 2.5rem;
-        color: $white;
-        @include border-radius(10rem);
-        border: none;
-        position: fixed;
-        top: 3rem;
-        right: 3rem;
-        z-index: 999;
-        text-transform: uppercase;
-        overflow: hidden;
+    font-family: $montserrat-font;
+    background: $caribbean-green;
+    font-weight: $normal;
+    padding: 1rem 2.5rem;
+    color: $white;
+    @include border-radius(10rem);
+    border: none;
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    z-index: 999;
+    text-transform: uppercase;
+    overflow: hidden;
 
-        &:after {
-            font-family: 'FontAwesome';
-            content: '\f0a2';
-            position: absolute;
-            opacity: 0;
-            top: 0.4rem;
-            right: -2rem;
-            font-size: 2rem;
-            @include transition(all $fast-transition ease-in-out);
-            @include animation(ring 1.5s infinite linear);
+    &:after {
+        font-family: 'FontAwesome';
+        content: '\f0a2';
+        position: absolute;
+        opacity: 0;
+        top: 0.4rem;
+        right: -2rem;
+        font-size: 2rem;
+        @include transition(all $fast-transition ease-in-out);
+        @include animation(ring 1.5s infinite linear);
+    }
+
+    @include keyframes(ring) {
+        0% {
+            @include transform(rotate(0deg));
         }
 
-        @include keyframes(ring) {
-            0% {
-                @include transform(rotate(0deg));
-            }
-            6.25% {
-                @include transform(rotate(-2deg));
-            }
-            12.5% {
-                @include transform(rotate(5deg));
-            }
-            18.75% {
-                @include transform(rotate(-10deg));
-            }
-            25% {
-                @include transform(rotate(15deg));
-            }
-            31.25% {
-                @include transform(rotate(-20deg));
-            }
-            37.5% {
-                @include transform(rotate(25deg));
-            }
-            43.75% {
-                @include transform(rotate(-30deg));
-            }
-            50% {
-                @include transform(rotate(35deg));
-            }
-            56.25% {
-                @include transform(rotate(-30deg));
-            }
-            62.5% {
-                @include transform(rotate(25deg));
-            }
-            68.75% {
-                @include transform(rotate(-20deg));
-            }
-            75% {
-                @include transform(rotate(15deg));
-            }
-            81.25% {
-                @include transform(rotate(-10deg));
-            }
-            87.5% {
-                @include transform(rotate(5deg));
-            }
-            93.75% {
-                @include transform(rotate(-2deg));
-            }
-            100% {
-                @include transform(rotate(0deg));
-            }
+        6.25% {
+            @include transform(rotate(-2deg));
         }
 
-        &:hover {
-            background: lighten($caribbean-green, 10%);
-            color: $white;
-            border-color: $caribbean-green;
-            padding-right: 4.5rem;
+        12.5% {
+            @include transform(rotate(5deg));
+        }
 
-            &:after {
-              opacity: 1;
-              right: 1.5rem;
-            }
+        18.75% {
+            @include transform(rotate(-10deg));
+        }
+
+        25% {
+            @include transform(rotate(15deg));
+        }
+
+        31.25% {
+            @include transform(rotate(-20deg));
+        }
+
+        37.5% {
+            @include transform(rotate(25deg));
+        }
+
+        43.75% {
+            @include transform(rotate(-30deg));
+        }
+
+        50% {
+            @include transform(rotate(35deg));
+        }
+
+        56.25% {
+            @include transform(rotate(-30deg));
+        }
+
+        62.5% {
+            @include transform(rotate(25deg));
+        }
+
+        68.75% {
+            @include transform(rotate(-20deg));
+        }
+
+        75% {
+            @include transform(rotate(15deg));
+        }
+
+        81.25% {
+            @include transform(rotate(-10deg));
+        }
+
+        87.5% {
+            @include transform(rotate(5deg));
+        }
+
+        93.75% {
+            @include transform(rotate(-2deg));
+        }
+
+        100% {
+            @include transform(rotate(0deg));
         }
     }
 
+    &:hover {
+        background: lighten($caribbean-green, 10%);
+        color: $white;
+        border-color: $caribbean-green;
+        padding-right: 4.5rem;
+
+        &:after {
+            opacity: 1;
+            right: 1.5rem;
+        }
+    }
+}
+
 .section {
     text-align: center;
-    @include transition(all $slow-transition ease-in-out); 
+    @include transition(all $slow-transition ease-in-out);
 }
 
 .text-left-block {
@@ -575,7 +687,7 @@ sup {
     font-weight: $light;
 
     span {
-    font-family: $raleway-font;
+        font-family: $raleway-font;
         display: block;
         font-size: 1.8rem;
     }
@@ -589,7 +701,8 @@ sup {
     z-index: 999;
 }
 
-.slideshow-home-left , .slideshow-home-right {
+.slideshow-home-left,
+.slideshow-home-right {
     position: absolute !important;
     z-index: -10;
     width: 50vw;
@@ -658,7 +771,8 @@ sup {
             border-color: $white !important;
         }
 
-        &:focus, &:active {
+        &:focus,
+        &:active {
             background: $white;
             color: $ebony-clay;
         }
@@ -805,7 +919,7 @@ sup {
     }
 }
 
-.slideshow-services{
+.slideshow-services {
     height: 100vh !important;
 }
 
@@ -819,113 +933,114 @@ sup {
 //     position: relative;
 //     z-index: 999;
 
-    .portfolio {
+.portfolio {
+    overflow: hidden;
+
+    figure {
+        padding: 0 !important;
         overflow: hidden;
+        cursor: pointer;
+        height: 33.33333vh;
 
-        figure {
-            padding: 0 !important;
-            overflow: hidden;
-            cursor: pointer;
+        img {
             height: 33.33333vh;
+        }
 
-            img {
-                height: 33.33333vh;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 0;
+            opacity: 0;
+            @include transition(all $slow-transition cubic-bezier(0.215, 0.61, 0.355, 1));
+            @include background(linear-gradient(rgba($dark-blue, 0.1), rgba($dark-blue, 0.8)));
+        }
+
+        .gallery-link {
+            position: relative;
+            float: left;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            .gallery-img {
+                opacity: 0;
             }
 
-            &:after {
-                content: '';
+            .photo {
                 position: absolute;
                 top: 0;
                 left: 0;
-                height: 100%;
                 width: 100%;
-                z-index: 0;
-                opacity: 0;
-                @include transition(all $slow-transition cubic-bezier(0.215, 0.61, 0.355, 1));
-                @include background(linear-gradient(rgba($dark-blue, 0.1), rgba($dark-blue, 0.8)));
+                height: 100%;
+                z-index: -20;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                @include transition(all $average-transition cubic-bezier(0.215, 0.61, 0.355, 1));
+                opacity: 1;
             }
+        }
 
-            .gallery-link {
-                position: relative;
-                float: left;
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
+        figcaption {
+            background: transparent;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            z-index: 1;
+            bottom: 0;
+            opacity: 0;
+            @include transform(translateY(0));
+            left: 0;
+            @include transition(all $average-transition cubic-bezier(0.215, 0.61, 0.355, 1));
 
-                .gallery-img {
-                    opacity: 0;
+            .photo-details {
+                h4 {
+                    font-family: $montserrat-font;
+                    text-transform: uppercase;
+                    color: $white;
+
+                    small {
+                        display: block;
+                        font-weight: $normal;
+                        text-transform: none;
+                        font-size: 1rem;
+                        margin-top: 1rem;
+                    }
                 }
 
-                .photo {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    z-index: -20;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: cover;
-                    @include transition(all $average-transition cubic-bezier(0.215, 0.61, 0.355, 1));
-                    opacity: 1;
+                p {
+                    display: none;
                 }
+            }
+        }
+
+        &:hover {
+            &:after {
+                opacity: 1;
             }
 
             figcaption {
-                background: transparent;
-                position: absolute;
-                text-align: center;
-                width: 100%;
-                z-index: 1;
-                bottom: 0;
-                opacity: 0;
-                @include transform(translateY(0));
-                left: 0;
-                @include transition(all $average-transition cubic-bezier(0.215, 0.61, 0.355, 1));
-
-                .photo-details {
-                    h4 {
-                        font-family: $montserrat-font;
-                        text-transform: uppercase;
-                        color: $white;
-
-                        small {
-                            display: block;
-                            font-weight: $normal;
-                            text-transform: none;
-                            font-size: 1rem;
-                        margin-top: 1rem;
-                        }
-                    }
-
-                    p {
-                        display: none;
-                    }
-                }
+                opacity: 1;
+                @include transform(translateY(-50%));
             }
 
-            &:hover {
-                &:after {
-                    opacity: 1;
-                }
-
-                figcaption {
-                    opacity: 1;
-                    @include transform(translateY(-50%));
-                }
-
-                .photo {
-                    opacity: 1;
-                    @include transform(scale(1.1));
-                }
+            .photo {
+                opacity: 1;
+                @include transform(scale(1.1));
             }
-        }
-
-        div {
-            padding: 0;
-            overflow: hidden;
         }
     }
+
+    div {
+        padding: 0;
+        overflow: hidden;
+    }
+}
+
 // }
 
 .block-team {
@@ -991,7 +1106,8 @@ sup {
         @include transition(all $fast-transition ease-in-out);
         text-align: left;
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             box-shadow: none;
             background: darken($bright-gray, 4%);
         }
@@ -1019,7 +1135,7 @@ sup {
         font-weight: $normal;
         text-transform: uppercase;
         padding: 1.4rem 2.5rem;
-                font-size: 1.4rem;
+        font-size: 1.4rem;
         color: $white;
         margin: auto;
         margin-top: 2rem;
@@ -1039,7 +1155,8 @@ sup {
     color: lighten($raven, 15%);
     position: absolute;
 
-    .success-message, .error-message {
+    .success-message,
+    .error-message {
 
         p {
             color: lighten($raven, 15%) !important;
@@ -1096,6 +1213,7 @@ sup {
         }
     }
 }
+
 /* ------------------------------------- */
 /* 7. Navigation ....................... */
 /* ------------------------------------- */
@@ -1353,7 +1471,8 @@ a.link-nav {
                         color: $kind-shark;
                         @include transition(all $fast-transition ease-in-out);
 
-                        &:hover, &:focus {
+                        &:hover,
+                        &:focus {
                             box-shadow: none;
                             background: darken($athens-gray, 2%);
                         }
@@ -1382,7 +1501,7 @@ a.link-nav {
                         }
                     }
                 }
-            }  
+            }
         }
     }
 
@@ -1425,7 +1544,7 @@ a.link-nav {
         bottom: 3rem;
         left: 0;
         position: absolute;
-    }  
+    }
 }
 
 /* ------------------------------------- */
@@ -1435,7 +1554,7 @@ a.link-nav {
 #social-nav {
     position: absolute;
     opacity: 1;
-    right: 2rem;
+    left: 2rem;
     bottom: 2rem;
     z-index: 999;
 
@@ -1517,7 +1636,8 @@ a.link-nav {
         display: none;
     }
 
-    body , html {
+    body,
+    html {
         overflow: visible !important;
     }
 
@@ -1525,7 +1645,8 @@ a.link-nav {
         display: none;
     }
 
-    .slideshow-home-left , .slideshow-home-right {
+    .slideshow-home-left,
+    .slideshow-home-right {
         position: relative !important;
         z-index: -10;
         width: 100vw;
@@ -1542,7 +1663,8 @@ a.link-nav {
         height: 100%;
     }
 
-    .ms-left, .ms-right {
+    .ms-left,
+    .ms-right {
         width: 100% !important;
         min-height: 0 !important;
         height: auto !important;
@@ -1566,7 +1688,7 @@ a.link-nav {
 
     .block-team ul.social-team {
         opacity: 1;
-            left: 2.5rem;
+        left: 2.5rem;
     }
 
     .carousel-inner {
@@ -1677,7 +1799,7 @@ a.link-nav {
             width: 100%;
         }
     }
-    
+
 }
 
 
@@ -1737,7 +1859,7 @@ a.link-nav {
         position: absolute;
         width: 100%;
         bottom: 4rem;
-        right: 0;
+        left: 0;
         text-align: center;
 
         ul {
@@ -1757,7 +1879,7 @@ a.link-nav {
     }
 
     .intro {
-        
+
 
         p {
             font-size: 1.2rem;
@@ -1792,6 +1914,7 @@ a.link-nav {
     #subscribe #notifyMe {
         margin-top: 0;
     }
+
     #subscribe #notifyMe .form-group .form-control {
         width: 95%;
     }
@@ -1865,7 +1988,7 @@ a.link-nav {
         position: relative;
         width: 100%;
         bottom: 0;
-        right: 0;
+        left: 0;
         text-align: center;
 
         ul {
@@ -1941,7 +2064,7 @@ a.link-nav {
                             height: 5rem;
                             margin-top: 0;
                             float: left;
-                            @include border-radius(0 0.3rem 0.3rem 0); 
+                            @include border-radius(0 0.3rem 0.3rem 0);
                         }
                     }
                 }
