@@ -854,6 +854,12 @@ body {
 	overflow: scroll;
 }
 
+a:active,
+a:focus {
+  outline: none !important;
+  text-decoration: none !important;
+  color: #00705f;
+}
 
 .ins-tile {
 	--background-gradient-angle: 90deg;
