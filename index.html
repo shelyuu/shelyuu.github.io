@@ -622,7 +622,7 @@
 										</div>
 
 										<!-- Form submission -->
-										<button type="submit" id="valid-form" class="btn btn-color">Send my Message to
+										<button type="submit" id="valid-form" class="btn btn-color" onclick="disableButton(this)">Send my Message to
 											unicorn fish</button>
 
 									</form>
@@ -870,6 +870,14 @@
 		});
 	</script>
 
+    <script>
+        function disableButton(btn) {
+            btn.disabled = true; // Disable button
+            setTimeout(() => {
+                btn.disabled = false; // Enable after 2 seconds
+            }, 2000);
+        }
+    </script>
 	<!-- Main JS File -->
 	<script src="/js/main-fullpage.js"></script>
 

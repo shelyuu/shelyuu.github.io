@@ -141,7 +141,6 @@ li {
   vertical-align: baseline;
 }
 
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -410,6 +409,15 @@ body {
 .scroll-touch {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+.center {
+  position: relative;
+  display: flex;
+  vertical-align: middle;
+  text-align: center;
+  top: 4rem;
+  left: 25%;
 }
 
 body,
@@ -1475,6 +1483,7 @@ sup {
   position: absolute;
   top: 0.5rem;
   left: 4.5rem;
+  padding: 0;
   opacity: 0;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;

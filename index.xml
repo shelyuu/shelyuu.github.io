@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shelyuu - the unicorn fish</title>
+    <link>https://www.shelyuu.com/</link>
+    <description>A coding fish in the digital realm with years of coding experience. Eager to dive deeper into the vast ocean of knowledge, always learning more.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Feb 2025 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.shelyuu.com/index.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>About Us</title>
+      <link>https://www.shelyuu.com/about/</link>
+      <pubDate>Sat, 11 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.shelyuu.com/about/</guid>
+      <description>About Code Sea Hub</description>
+    </item>
+
+  </channel>
+</rss>
